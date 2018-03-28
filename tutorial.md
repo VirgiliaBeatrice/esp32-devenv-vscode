@@ -27,7 +27,7 @@ If you are curious about setting up a toolchain manually, here is a [tutorial](h
 Download the zip file and unzip it to `C:\` (or other directory which you prefer), then we will get an `msys32` directory under `C:\`.
 Click and run `C:\msys32\mingw32.exe` to check whether the environment has been configured.
 
-![MSYS2 Environment](img/MSYS2_Cap0.png)
+![MSYS2 Environment](img/MSYS2_Cap0.PNG)
 
 > Note: Before you start `mingw32.exe`, it might need to run `autorebase.bat` first to make your `MSYS2` work normally.
 
@@ -82,8 +82,8 @@ cd ~/esp/hello_world
 make menuconfig
 ```
 
-![Serial Port Configuration - 1](img/Serial_Cap1.png)
-![Serial Port Configuration - 2](img/Serial_Cap0.png)
+![Serial Port Configuration - 1](img/Serial_Cap1.PNG)
+![Serial Port Configuration - 2](img/Serial_Cap0.PNG)
 
 After finished the configuration of serial port, save and exit by selecting `< Save >` and `< Exit >`.
 
@@ -96,8 +96,8 @@ make flash
 make monitor
 ```
 
-![Flash](img/Flash_Cap0.png)
-![Monitor](img/Flash_Cap1.png)
+![Flash](img/Flash_Cap0.PNG)
+![Monitor](img/Flash_Cap1.PNG)
 
 > Note: `Ctrl + ]` can exit the monitor.
 
@@ -138,16 +138,16 @@ Here, we can use [Zadig](http://zadig.akeo.ie/) and easily change the default dr
 
 Follow below precedures, finally `FT232HL` could work as a JTAG debugger.
 
-![Zadig - Step.1](img/Zadig_Cap0.png)
-![Zadig - Step.2](img/Zadig_Cap1.png)
-![Zadig - Step.3](img/Zadig_Cap2.png)
-![Zadig - Step.4](img/Zadig_Cap3.png)
+![Zadig - Step.1](img/Zadig_Cap0.PNG)
+![Zadig - Step.2](img/Zadig_Cap1.PNG)
+![Zadig - Step.3](img/Zadig_Cap2.PNG)
+![Zadig - Step.4](img/Zadig_Cap3.PNG)
 
 ### Connect to JTAG Debugger
 
 Enter below command to start `OpenOCD`.
 
-![OpenOCD Output](img/OpenOCD_Cap0.png)
+![OpenOCD Output](img/OpenOCD_Cap0.PNG)
 
 If you get output as above, `OpenOCD` now is working well.
 
@@ -160,8 +160,8 @@ cd ~/esp/hello_world/
 xtensa-esp32-elf-gdb -ex 'target remote localhost:3333' ./build/hello-world.elf
 ```
 
-![GDB Output](img/GDB_Cap0.png)
-![OpenOCD Output](img/GDB_Cap1.png)
+![GDB Output](img/GDB_Cap0.PNG)
+![OpenOCD Output](img/GDB_Cap1.PNG)
 
 If you got output as above, `OpenOCD` and `GDB` now is connected.
 
@@ -174,7 +174,7 @@ After installation, launch `VS Code` and install essential extensions.
 1. C/C++ for Visual Studio Code
 2. Native Debug
 
-![VS Code Extension](img/VSCode_Cap0.png)
+![VS Code Extension](img/VSCode_Cap0.PNG)
 
 ### Configure VS Code
 
@@ -186,7 +186,7 @@ Put `blink` project into anywhere you want, and open this folder in `VS Code`.
 To enable code completion and navigation, we need to generate a `c_cpp_properties.json` file first.
 Enter `Ctrl+Shift+P` to open `Command Palette`, then choose `C/Cpp: Edit Configurations` to generate a new `c_cpp_properties.json` file.
 
-![C/Cpp Configurations](img/VSCode_Cap1.png)
+![C/Cpp Configurations](img/VSCode_Cap1.PNG)
 
 The modified `c_cpp_properties.json` file has shown as below.
 Please change `includePath` to adapt your own case.
@@ -233,7 +233,7 @@ Please change `includePath` to adapt your own case.
 To handle build, clean, and flash tasks in `VS Code`, we need to configure `tasks.json` file.
 Enter `Ctrl+Shift+P` to open `Command Palette`, then choose `Tasks: Configuration Task` to generate a new `tasks.json` file.
 
-![Tasks Configuration](img/VSCode_Cap2.png)
+![Tasks Configuration](img/VSCode_Cap2.PNG)
 
 Modify the file as below, then you can use customized tasks in `VS Code` toolbar.
 
@@ -331,7 +331,7 @@ To set the default integrated terminal as MSYS2, we need to configure `User Sett
 Clike `File - Preferences - Settings` to open `Setting` window.
 In `User Settings` panel, write below lines to setup.
 
-![User Settings](img/VSCode_Cap3.png)
+![User Settings](img/VSCode_Cap3.PNG)
 
 ```json
 {
