@@ -47,7 +47,7 @@ git clone --recursive https://github.com/espressif/esp-idf.git
 ### Set IDF_PATH
 
 To make the API work well, we need to set the system variable of `IDF_PATH`.
-An official [tutorial]() is supplied.
+An official [tutorial](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows) is supplied.
 
 Here, we already prepared a `export_idf_path.sh`.
 However, you need to modify the directory based on your own case.
