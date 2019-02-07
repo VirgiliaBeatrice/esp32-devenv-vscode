@@ -122,7 +122,7 @@ After unzipped files, enter below commands to configure OpenOCD.
 ```bash
 cd ~/openocd-0.10.0-dev-gcdaf22fd
 cp -r ./share/ /mingw32/share/openocd
-cp ./openocd.exe /mingw32/bin/
+cp ./bin/openocd.exe /mingw32/bin/
 ```
 
 Before we run `openocd`, a dependancy of `libusb` is needed.
