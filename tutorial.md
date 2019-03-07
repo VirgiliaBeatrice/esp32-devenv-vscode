@@ -22,7 +22,7 @@ To develop and debug our first project on ESP32 boards, we need to finish severa
 ## Toolchain
 
 To obtain the toolchain of ESP32 chips, we can directly download an pre-packaged MSYS2 environment from [here](https://dl.espressif.com/dl/esp32_win32_msys2_environment_and_toolchain-20180110.zip).
-If you are curious about setting up a toolchain manually, here is a [tutorial](http://esp-idf.readthedocs.io/en/latest/get-started/windows-setup.html) from the official site could be useful.
+If you are curious about setting up a toolchain manually, here is a [tutorial]() from the official site could be useful.
 
 Download the zip file and unzip it to `C:\` (or other directory which you prefer), then we will get an `msys32` directory under `C:\`.
 Click and run `C:\msys32\mingw32.exe` to check whether the environment has been configured.
@@ -47,7 +47,7 @@ git clone --recursive https://github.com/espressif/esp-idf.git
 ### Set IDF_PATH
 
 To make the API work well, we need to set the system variable of `IDF_PATH`.
-An official [tutorial]() is supplied.
+An official [tutorial](http://esp-idf.readthedocs.io/en/latest/get-started/windows-setup.html) is supplied.
 
 Here, we already prepared a `export_idf_path.sh`.
 However, you need to modify the directory based on your own case.
@@ -107,7 +107,7 @@ If you got correct ouput, the compling and flashing parts now are working well.
 
 ## OpenOCD
 
-Here, we supply a pre-compiled `OpenOCD-ESP32`, and you can directly download [openocd-0.10.0-dev-gcdaf22fd]() and use it.
+Here, we supply a pre-compiled `OpenOCD-ESP32`, and you can directly download [openocd-0.10.0-dev-gcdaf22fd](https://github.com/espressif/openocd-esp32/releases) and use it.
 Copy `OpenOCD` to `C:\msys32\home\yourusername\`, and unzip it.
 
 ```bash
@@ -122,7 +122,7 @@ After unzipped files, enter below commands to configure OpenOCD.
 ```bash
 cd ~/openocd-0.10.0-dev-gcdaf22fd
 cp -r ./share/ /mingw32/share/openocd
-cp ./openocd.exe /mingw32/bin/
+cp ./bin/openocd.exe /mingw32/bin/
 ```
 
 Before we run `openocd`, a dependancy of `libusb` is needed.
